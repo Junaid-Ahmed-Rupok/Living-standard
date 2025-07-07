@@ -1,0 +1,10 @@
+* todo list
+
+** features
+  - [X] user input page implementation
+  - [ ] css implementation
+  - [ ] javascript implementation
+  - [ ] hyper tuning
+
+** miscellaneous
+  - [ ] code documentation

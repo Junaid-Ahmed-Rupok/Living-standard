@@ -1,6 +1,6 @@
-* Analysis of Bangladeshi people's living standard
+* warning
 
-A living standard regression analysis app
+This is just a development branch. It is not guaranteed that the work of this branch will work. Cloning this branch is highly discouraged.
 
 ** what it is
 

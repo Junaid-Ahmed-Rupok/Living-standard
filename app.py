@@ -28,9 +28,11 @@ def create_modified_encoder(encoder):
     if not model_cats:
         return None
 
-    categories = [
-        feature_info[feature] for feature in model_cats
-    ]  # categories of the model
+    #    categories = [
+    #        feature_info[feature] for feature in model_cats
+    #    ]  # categories of the model_cats
+
+    categories = ", ".join(str(feature_info[feature]) for feature in model_cats)
 
     modified_encoder = OrdinalEncoder(
         categories=categories
@@ -39,11 +41,15 @@ def create_modified_encoder(encoder):
         [categories[i][0] for i in range(len(categories))]
     ]  # dummy values creation
     modified_encoder.fit(dummy_values)  # training the modified encoder
-    modified_encoder.feature_names_in_ = np.array(
+
+    #    modified_encoder.feature_names_in_ = np.array(
+    #        model_cats
+    #    )  # assigining the model categories to the modified encoder
+    # return modified_encoder
+
+    return encoder.fit(
         model_cats
     )  # assigining the model categories to the modified encoder
-
-    return modified_encoder
 
 
 modified_encoder = create_modified_encoder(encoder)  # creation of the modified encoder
@@ -73,4 +79,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
-

@@ -42,7 +42,9 @@
       </form>
 
       {% if predictions %}
-      <h3>Predicted Mortality Outcome: {{ predictions }}.</h3>
+      <div class="mt-3 alert alert-success w-50" role="alert">
+        Predicted Mortality Outcome: {{ predictions }}.
+      </div>
       {% endif %}
 
       <script

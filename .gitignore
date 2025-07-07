@@ -13,6 +13,10 @@ __pycache__/
 # C extensions
 *.so
 
+# csv files
+csv_files/*
+!csv_files/.gitkeep
+
 # Distribution / packaging
 .Python
 build/

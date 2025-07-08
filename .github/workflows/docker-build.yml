@@ -25,7 +25,7 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t living-standard .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/living-standard:latest .
 
       - name: Push Docker image
         run: |

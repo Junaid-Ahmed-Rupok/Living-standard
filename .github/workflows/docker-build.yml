@@ -29,6 +29,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag living-standard ${{ secrets.DOCKER_USERNAME }}/living-standard:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/living-standard:latest
 

@@ -2,7 +2,8 @@
 
 ** features
   - [X] user input page implementation
-  - [ ] css implementation
+  - [X] css implementation
+  - [-] docker implementation
   - [ ] javascript implementation
   - [ ] hyper tuning
 

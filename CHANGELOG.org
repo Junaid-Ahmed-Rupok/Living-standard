@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented in this file.
 
+** [0.1.0] - 08-07-2025
+
+*** features:
+  - css implemented
+  - docker introduced
+
+*** enhancements:
+  - gitignore polished
+  - code refactored
+
 ** [0.0.0] - 07-07-2025
 
   - initialized the repository

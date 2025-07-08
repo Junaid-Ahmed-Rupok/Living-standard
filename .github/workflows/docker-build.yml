@@ -25,7 +25,7 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t my-flask-app .
+          docker build -t living-standard .
 
       - name: Push Docker image
         run: |

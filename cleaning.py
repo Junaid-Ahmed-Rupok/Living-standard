@@ -35,5 +35,5 @@ def preprocessing(read_csv):
     return df
 
 
-cleaned_df = preprocessing(r"csv_files/Living_Standard.csv")
+cleaned_df = preprocessing("C:\Users\JUNAID AHMED\Downloads\datasets\Thesis dataset\Living_Standard.csv")
 joblib.dump(cleaned_df, "df.pkl")  # dumping the dataframe
